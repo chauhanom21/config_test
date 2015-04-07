@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>in.java4u.control.AdminLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PatientRegister</servlet-name>
+        <servlet-class>in.java4u.control.PatientRegister</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PatientLogin</servlet-name>
+        <servlet-class>in.java4u.control.PatientLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/AdminLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientRegister</servlet-name>
+        <url-pattern>/PatientRegister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientLogin</servlet-name>
+        <url-pattern>/PatientLogin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
